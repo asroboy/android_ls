@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lapaksembako.app">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@drawable/launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".BuktiPembayaranActivity"></activity>
+        <activity android:name=".WebActivity" />
+        <activity android:name=".TarikDanaActivity" />
+        <activity android:name=".DaftarkanMemberActivity" />
+        <activity android:name=".PoinActivity" />
+        <activity android:name=".KomisiActivity" />
+        <activity android:name=".ReferralActivity" />
+        <activity android:name=".ListAlamatActivity" />
+        <activity android:name=".PesananActivity" />
+        <activity android:name=".LupaPasswordActivity" />
+        <activity
+            android:name=".ProductDetail2Activity"
+            android:label="@string/title_activity_product_detail2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".TambahAkunBankActivity" />
+        <activity android:name=".ItemsInCategoryActivity" />
+        <activity android:name=".AlamatActivity" />
+        <activity
+            android:name=".EditProfilActivity"
+            android:label="Edit Profile" />
+        <activity
+            android:name=".MainBottomNavigationActivity"
+            android:label="@string/title_activity_main_bottom_navigation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ProdukDetailActivity"
+            android:label="Produk Detail" />
+        <activity
+            android:name=".NotifikasiActivity"
+            android:label="Notifikasi"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SearchActivity"
+            android:label="Search" />
+        <activity
+            android:name=".SyaratDanKetentuanActivity"
+            android:label="Syarat dan Ketentuan" />
+        <activity
+            android:name=".InstagramActivity"
+            android:label="Instagram" />
+        <activity
+            android:name=".InfoActivity"
+            android:label="Info Aplikasi" />
+        <activity
+            android:name=".FaqActivity"
+            android:label="FAQ" />
+        <activity
+            android:name=".BantuanActivity"
+            android:label="Bantuan" />
+        <activity android:name=".DaftarActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity
+            android:name=".TermOfUseActivity"
+            android:theme="@style/AppTheme.NoActionBar.TopWhite" />
+        <activity
+            android:name=".WellcomeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

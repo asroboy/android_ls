@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BuktiPembayaranActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_height="wrap_content"
+            android:text="Invoice" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Bank" />
+
+        <EditText
+            android:id="@+id/editTextNamaBank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No Rekening" />
+
+        <EditText
+            android:id="@+id/editTextNoRek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView45"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Atas Nama" />
+
+        <EditText
+            android:id="@+id/editTextAtasNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView46"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nominal Transfer" />
+
+        <EditText
+            android:id="@+id/editTextNominalTransfer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView48"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:text="Upload Bukti Pembayaran" />
+
+        <ImageView
+            android:id="@+id/imageViewPic"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/no_image" />
+
+        <Button
+            android:id="@+id/buttonKirim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_rounded_gradient"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:text="Kirim" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

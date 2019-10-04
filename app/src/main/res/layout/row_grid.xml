@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:id="@+id/item_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/bg_grid"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/item_image"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginBottom="5dp"
+                android:layout_alignParentRight="false"
+                android:layout_alignParentLeft="false"
+                android:layout_centerInParent="true"></ImageView>
+
+            <Button
+                android:id="@+id/buttonLike"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:elevation="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/ic_like" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Sabun Detol (Original)"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/textViewHarga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Rp. 12.000 /pcs"
+            android:textColor="@android:color/holo_red_dark" />
+
+        <Button
+            android:id="@+id/buttonBeli"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_bt_beli"
+            android:text="Beli"
+            android:textAllCaps="false"
+            android:elevation="15dp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

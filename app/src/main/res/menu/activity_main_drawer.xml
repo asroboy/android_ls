@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_faq"
+            android:title="FAQ" />
+        <item
+            android:id="@+id/nav_bantuan"
+            android:title="Bantuan" />
+        <item
+            android:id="@+id/nav_syarat_dan_ketentuan"
+            android:title="Syarat dan Ketentuan" />
+        <item
+            android:id="@+id/nav_info_aplikasi"
+            android:title="Info Aplikasi" />
+        <item
+            android:id="@+id/nav_instagram"
+            android:title="Instagram" />
+
+        <item
+            android:id="@+id/test"
+            android:title="Keluar" />
+    </group>
+
+</menu>

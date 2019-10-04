@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_white"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/love"
+        android:icon="@drawable/ic_love_white"
+        android:title="@string/title_dashboard" />
+
+    <item
+        android:id="@+id/n"
+        android:title="" />
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/ic_history_belanja_white"
+        android:title="@string/title_dashboard" />
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_person_white"
+        android:title="@string/title_notifications" />
+
+</menu>

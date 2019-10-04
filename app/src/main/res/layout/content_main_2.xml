@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainBottomNavigationActivity"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="0dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_height="0dp"
+        android:layout_above="@+id/bnve"
+        app:layout_constraintBottom_toTopOf="@+id/bnve"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
+
+    <com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx
+        android:id="@+id/bnve"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/hijauTua"
+        app:itemIconTint="@android:color/white"
+        app:itemTextColor="@android:color/white"
+        app:labelVisibilityMode="unlabeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+    <!--<android.support.v4.view.ViewPager-->
+    <!--android:id="@+id/vp"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_above="@id/bnve" />-->
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/bg_center_fab"
+        android:backgroundTint="@color/hijauTua"
+        android:src="@drawable/ic_shop_chart_white"
+        android:tint="@android:color/white"
+        app:backgroundTint="@android:color/white"
+        app:borderWidth="2dp"
+        app:elevation="9dp"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/bnve"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:name="com.lapaksembako.app.fragments.ChartFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="none"
+        android:layout_marginBottom="8dp"
+        app:layoutManager="LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".fragments.ChartFragment"
+        tools:listitem="@layout/fragment_chart"></android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/buttonTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/bg_rounded_gradient"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:text="Total Rp 0" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/bg_rounded_gradient"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonBelanjaLagi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:text="Belanja Lagi" />
+
+            <TextView
+                android:id="@+id/textView72"
+                android:layout_width="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:background="@android:color/white"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/buttonCheckout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@android:color/white"
+                android:background="@android:color/transparent"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:text="Checkoout" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

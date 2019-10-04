@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlamatActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Provinsi" />
+
+        <Spinner
+            android:id="@+id/spinnerProvinsi"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_height="45dp" />
+
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kota" />
+
+        <Spinner
+            android:id="@+id/spinnerKota"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_height="45dp" />
+
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alamat" />
+
+        <EditText
+            android:id="@+id/editTextAlamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:lines="5"
+            android:gravity="start|top"
+            android:layout_marginBottom="15dp"
+            android:inputType="textMultiLine" />
+
+        <CheckBox
+            android:id="@+id/checkBoxDefault"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="Atur sebagai alamat standar" />
+
+        <Button
+            android:id="@+id/buttonSimpanAlamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:textColor="@color/hijauTua"
+            android:background="@drawable/bg_rounded_gradient"
+            android:text="Simpan" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
